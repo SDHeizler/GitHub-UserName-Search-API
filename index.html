@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHub Name Search</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>GitHub Name Search</h1>
+    </header>
+    <main>
+        <form>
+            <label>Please enter a name</label>
+            <input type="text" class="js-input" name="SearchName" placeholder="Enter Username here" required>
+            <input type="submit" class="button" value="Submit">
+        </form>
+        <section class="error hidden">
+            <div></div>
+        </section>
+        <section class="resultsContainer">
+            <ul class="results">
+
+            </ul>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
