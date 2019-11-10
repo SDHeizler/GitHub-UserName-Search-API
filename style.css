@@ -33,6 +33,9 @@ form .button{
     margin-top:5em;
     margin-left:1.5em;
 }
+.resultsContainer h2{
+    margin-bottom:10px;
+}
 .results {
     list-style-type: none;
     font-size: 1.3em;
@@ -52,4 +55,20 @@ form .button{
 }
 .results li a:hover{
     background:rgb(170, 107, 12);
+}
+.hidden{
+    display: none;
+}
+.error{
+    margin-top:3em;
+    height:3em;
+    width:50em;
+    margin-left:auto;
+    margin-right:auto;
+    background: rgb(245, 239, 237);
+    line-height: 2em;
+    border:1px solid rgb(156, 47, 4);
+    color:red;
+    font-size: large;
+    text-align: center;
 }

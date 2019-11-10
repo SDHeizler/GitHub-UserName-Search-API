@@ -27,7 +27,10 @@ function requestUser(user) {
             getUserRepos(responseJson);
         })
         .catch(function (err) {
-            console.log(`There was an error ${err.message}`);
+            $('.error').show(300);
+            $('.errorText').text(`There was an error: ${err.message}`);
+            $('.error').delay(3000).hide(300);
+            $('.js-input').val("");
         })
 }
 // Get user repos
@@ -45,7 +48,9 @@ function getUserRepos(responseJson) {
             displayRepos(responseJson);
         })
         .catch(function (err) {
-            console.log(`There was an error ${err.message}`);
+            $('.error').show(300);
+            $('.errorText').text(`There was an error ${err.message}`);
+            $('.error').delay(3000).hide(300);
         })
 
 }
@@ -58,7 +63,7 @@ function displayRepos(responseJson) {
         $('.results').append(`<li>
                     <a href="${ele.html_url}" target="_blank">${ele.name}</a>
                 </li>`);
-    })
+    });
     clearInput();
 }
 
